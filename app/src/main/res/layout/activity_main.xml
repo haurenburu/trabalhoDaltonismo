@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+>
+
+    <data>
+        <variable
+            name="testeDaltonismo"
+            type="com.example.trabalhodaltonismo.TesteDaltonismo" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_oquee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/o_que_e"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_facaoteste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/faca_o_teste"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintStart_toStartOf="@+id/textView_oquee"
+        app:layout_constraintTop_toBottomOf="@+id/textView_textodalto" />
+
+    <TextView
+        android:id="@+id/textView_textodalto"
+        android:layout_width="308dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/daltonismo_uma_perturba_o_da_percep_o_visual_caracterizada_pela_incapacidade_de_diferenciar_todas_ou_algumas_cores_em_geral_dificuldade_de_distinguir_o_verde_do_vermelho"
+        app:layout_constraintStart_toStartOf="@+id/textView_oquee"
+        app:layout_constraintTop_toBottomOf="@+id/textView_oquee" />
+
+    <Button
+        android:id="@+id/button_teste1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/teste_1"
+        app:layout_constraintBottom_toTopOf="@+id/button_teste2"
+        app:layout_constraintStart_toStartOf="@+id/textView_facaoteste" />
+
+    <Button
+        android:id="@+id/button_teste2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/teste_2"
+        app:layout_constraintBottom_toTopOf="@+id/button_teste3"
+        app:layout_constraintStart_toStartOf="@+id/button_teste1" />
+
+    <Button
+        android:id="@+id/button_teste3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="@string/teste_3"
+        app:layout_constraintBottom_toTopOf="@+id/button_verificar"
+        app:layout_constraintStart_toStartOf="@+id/button_teste2" />
+
+    <Button
+        android:id="@+id/button_verificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="@string/verificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button_teste3" />
+
+    <TextView
+        android:id="@+id/textView_respostas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/suas_respostas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_facaoteste" />
+
+    <TextView
+        android:id="@+id/textView_resposta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@={testeDaltonismo.resposta1}"
+        app:layout_constraintBottom_toBottomOf="@+id/button_teste1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_teste1"
+        app:layout_constraintVertical_bias="0.586" />
+
+    <TextView
+        android:id="@+id/textView_resposta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@={testeDaltonismo.resposta2}"
+        app:layout_constraintBottom_toBottomOf="@+id/button_teste2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_teste2"
+        app:layout_constraintVertical_bias="0.586" />
+
+    <TextView
+        android:id="@+id/textView_resposta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@={testeDaltonismo.resposta3}"
+        app:layout_constraintBottom_toBottomOf="@+id/button_teste3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_teste3"
+        app:layout_constraintVertical_bias="0.586" />
+
+    <TextView
+        android:id="@+id/textView_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@={testeDaltonismo.resultado}"
+        app:layout_constraintBottom_toBottomOf="@+id/button_verificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.694"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_verificar"
+        app:layout_constraintVertical_bias="0.586" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

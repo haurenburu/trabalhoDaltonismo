@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">trabalhoDaltonismo</string>
+    <string name="resposta_1">Resposta_1</string>
+    <string name="resposta_3">Resposta_3</string>
+    <string name="teste_1">TESTE 1</string>
+    <string name="teste_3">TESTE 3</string>
+    <string name="faca_o_teste">Faca o teste!</string>
+    <string name="resultado_do_teste">Resultado_do_Teste</string>
+    <string name="resposta_2">Resposta_2</string>
+    <string name="suas_respostas">Suas respostas</string>
+    <string name="daltonismo_uma_perturba_o_da_percep_o_visual_caracterizada_pela_incapacidade_de_diferenciar_todas_ou_algumas_cores_em_geral_dificuldade_de_distinguir_o_verde_do_vermelho">Daltonismo é uma perturbação da percepção visual caracterizada pela incapacidade de diferenciar todas ou algumas cores, Em geral dificuldade de distinguir o verde do vermelho</string>
+    <string name="o_que_e">O que e?</string>
+    <string name="verificar">VERIFICAR</string>
+    <string name="teste_2">TESTE 2</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="ok">OK</string>
+    <string name="todo">TODO</string>
+    <string name="que_numero_voce_ve_na_imagem_abaixo">Que numero voce ve na imagem abaixo?</string>
+</resources>
